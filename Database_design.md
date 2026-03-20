@@ -1,4 +1,3 @@
-````markdown
 # 🗄️ Database Architecture & Entity Design: Smart Procurement System
 
 ## 1. Architectural Overview
@@ -119,13 +118,8 @@ erDiagram
         String status
     }
 ```
-````
 
 ---
 
 **Data Architecture by:** Mohammed Hlal
 **Tech Stack:** SQLAlchemy | Relational DB (SQLite/PostgreSQL) | Mermaid ERD
-
-```
-
-```
