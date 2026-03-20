@@ -1,4 +1,3 @@
-````markdown
 # 🏛️ Solution Architecture: Smart Procurement System (MVP)
 
 ## 1. Architectural Overview
@@ -58,7 +57,6 @@ graph TD
 
     ORM --> DB
 ```
-````
 
 ---
 
