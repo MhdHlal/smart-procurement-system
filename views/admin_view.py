@@ -186,8 +186,8 @@ def show_admin_view(session):
                     st.markdown("<br>", unsafe_allow_html=True)
                     col_upd, col_del = st.columns([1, 1])
                     
-                    update_btn = col_upd.form_submit_button("💾 Save Changes", type="primary", use_container_width=True)
-                    delete_btn = col_del.form_submit_button("🗑️ Delete Vendor", use_container_width=True)
+                    update_btn = col_upd.form_submit_button("💾 Save Changes", type="primary", width='stretch')
+                    delete_btn = col_del.form_submit_button("🗑️ Delete Vendor", width='stretch')
                     
                     if update_btn:
                         old_info = f"{target_v.name} ({target_v.email})"

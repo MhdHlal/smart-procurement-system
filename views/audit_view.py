@@ -40,7 +40,7 @@ def show_audit_log_page(session): # أضفنا الـ session كمعامل لل�
 
         st.dataframe(
             df, 
-            use_container_width=True, 
+            width='stretch', 
             hide_index=True,
             column_config={
                 "Details": st.column_config.TextColumn("Activity Details", width="large"),

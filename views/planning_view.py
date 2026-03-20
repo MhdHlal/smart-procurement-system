@@ -39,7 +39,7 @@ def show_planning_view(session):
                 st.markdown("<br><br>", unsafe_allow_html=True)
                 
                 # إرسال الطلب
-                if st.button("🚀 Submit PR to Purchasing", type="primary", use_container_width=True):
+                if st.button("🚀 Submit PR to Purchasing", type="primary", width='stretch'):
                     # التعديل هنا: تأكد أن الأسماء تطابق ما هو موجود في pr_service.py
                     success = submit_purchase_request(
                         pr_number=pr_num,      # تأكد أنها pr_number وليس pr_num

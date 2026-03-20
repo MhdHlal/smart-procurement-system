@@ -52,7 +52,7 @@ def show_purchasing_view(session, ARCHIVE_DIR):
                     col_btn1, col_btn2 = st.columns([3, 1]) # تقسيم المساحة لزر كبير وزر صغير
 
                     with col_btn1:
-                        if st.button("🚀 Process & Send RFQ", key=f"proc_{pr.id}", type="primary", use_container_width=True):
+                        if st.button("🚀 Process & Send RFQ", key=f"proc_{pr.id}", type="primary", width='stretch'):
                                 if not selected_vendors:
                                     st.error("⚠️ Please select at least one vendor.")
                                     st.stop()
@@ -108,7 +108,7 @@ def show_purchasing_view(session, ARCHIVE_DIR):
 
                     with col_btn2:
                         # زر الأرشفة لتنظيف القائمة من الطلبات غير المرغوب فيها
-                        if st.button("📁 Archive", key=f"arch_{pr.id}", use_container_width=True, help="Hide this request without processing"):
+                        if st.button("📁 Archive", key=f"arch_{pr.id}", width='stretch', help="Hide this request without processing"):
                             try:
                                 pr_no = pr.pr_number
                                 project_name = pr.project_name if hasattr(pr, 'project_name') else "Unknown Project"
