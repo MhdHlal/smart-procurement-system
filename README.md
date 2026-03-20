@@ -1,4 +1,3 @@
-````markdown
 # 🚀 Smart Procurement System (SPS) v1.0
 
 An industrial-grade MVP designed to bridge the gap between production engineering and supply chain execution through automated intelligence and BOM-driven workflows.
@@ -41,6 +40,7 @@ To provide a 360-degree view of the system's architecture and business value, th
 ├── app.py              # Application entry point
 └── requirements.txt    # Production dependencies
 ```
+
 ````
 
 ---
@@ -138,7 +138,7 @@ streamlit run app.py
 
 ## 🤝 Contact & Collaboration
 
-**Digital Consultant:** Mohammed Hlal  
+**Digital Consultant:** Mohammed Hlal
 **LinkedIn:** [Mohammed Hlal Profile](https://www.linkedin.com/in/mohamed-hlal-288206334/)
 
 _This project is engineered to meet the highest standards of operational excellence and digital scalability in the procurement domain._
@@ -146,3 +146,4 @@ _This project is engineered to meet the highest standards of operational excelle
 ```
 
 ```
+````
