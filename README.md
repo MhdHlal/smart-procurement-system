@@ -41,8 +41,6 @@ To provide a 360-degree view of the system's architecture and business value, th
 └── requirements.txt    # Production dependencies
 ```
 
-````
-
 ---
 
 ## ✨ Key Features
@@ -146,4 +144,3 @@ _This project is engineered to meet the highest standards of operational excelle
 ```
 
 ```
-````
