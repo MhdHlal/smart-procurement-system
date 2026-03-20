@@ -1,0 +1,24 @@
+# --- Python Specific ---
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+/venv/
+/env/
+
+# --- Database & Local Logs ---
+# We keep the schema, but not the actual data file
+procurement.db
+system_errors.log
+
+# --- Environment & Secrets ---
+# CRITICAL: Never upload your real .env
+.env
+
+# --- Editor Specific ---
+.vscode/
+.idea/
+.DS_Store
+
+# --- App Specific ---
+/rfq_archive/*.pdf
