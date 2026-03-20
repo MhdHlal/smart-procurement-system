@@ -1,4 +1,3 @@
-````markdown
 # 📋 Project Executive Summary: Smart Procurement System (SPS)
 
 ## 1. Executive Summary
@@ -47,6 +46,7 @@ graph TD
     H -->|Awarded| I[Archive & Notify]
     H -->|Rejected| D
 ```
+
 ````
 
 ### 🎯 Key Improvements in the Future State
@@ -95,3 +95,5 @@ The system is architected for scalability, with the following enhancements propo
 ```
 
 ```
+
+````
