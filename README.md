@@ -20,19 +20,19 @@ The **Smart Procurement System (SPS)** is a professional-grade MVP designed to t
 
 To provide a comprehensive understanding of the system, the project is documented across four strategic pillars:
 
-1.  **[Strategic Project Summary](./PROJECT_SUMMARY.md):** The business case, current challenges, and the future state of the procurement process.
-2.  **[Solution Architecture](./Solution_architecture.md):** A deep dive into the N-Tier architecture, including component interactions and logic flow.
-3.  **[Database Design](./Database_design.md):** Detailed ERD and entity relationships based on the SQLAlchemy implementation.
-4.  **[Technology Rationale](./Technology_rationale.md):** The "Why" behind our choice of tools (Python, Streamlit, SQLAlchemy, etc.).
+1. **[Strategic Project Summary](./PROJECT_SUMMARY.md)**: The business case, current challenges, and the future state.
+2. **[Solution Architecture](./Solution_architecture.md)**: A deep dive into the N-Tier architecture and logic flow.
+3. **[Database Design](./Database_design.md)**: Detailed ERD and entity relationships.
+4. **[Technology Rationale](./Technology_rationale.md)**: The strategic choice of tools and frameworks.
 
 ---
 
 ## ✨ Key Features
 
 - **BOM-Driven Procurement:** Automatically calculate material requirements based on production planning.
-- **Automated RFQ Dispatch:** Generate professional PDF RFQs and dispatch them to vendors via SMTP in one click.
-- **Awarding Terminal:** Side-by-side bid comparison matrix for data-driven decision making.
-- **Immutable Audit Trail:** Every action (Create, Send, Award) is logged for full transparency and GRC compliance.
+- **Automated RFQ Dispatch:** Generate professional PDF RFQs and dispatch them via SMTP.
+- **Awarding Terminal:** Side-by-side bid comparison matrix for data-driven decisions.
+- **Immutable Audit Trail:** Full transparency and GRC compliance for every system action.
 - **Vendor Management:** Targeted vendor selection based on material specialty.
 
 ---
@@ -49,15 +49,13 @@ cd smart-procurement-system
 
 ### 2. Environment Configuration
 
-SPS uses a decoupled configuration model for security and flexibility.
-
 1. Copy the template: `cp .env.example .env`
 2. Update the `.env` file with your SMTP credentials and database path.
 
 ### 3. Install Dependencies
 
 ```bash
-pip install -r requirements.json
+pip install -r requirements.txt
 ```
 
 ### 4. Run the Application
@@ -92,8 +90,8 @@ graph LR
 
 ## 🤝 Contact & Collaboration
 
-**Digital Consultant:** Mohammed Hlal
-**LinkedIn:** https://www.linkedin.com/in/mohamed-hlal-288206334/
+**Digital Consultant:** Mohammed Hlal  
+**LinkedIn:** [Profile Link](https://www.linkedin.com/in/mohamed-hlal-288206334/)
 
 _Designed and engineered with a focus on operational excellence and digital scalability._
 
