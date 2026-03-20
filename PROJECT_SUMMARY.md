@@ -47,8 +47,6 @@ graph TD
     H -->|Rejected| D
 ```
 
-````
-
 ### 🎯 Key Improvements in the Future State
 
 - **Predictability:** Management can forecast material needs based on the BOM instead of guessing.
@@ -96,4 +94,6 @@ The system is architected for scalability, with the following enhancements propo
 
 ```
 
-````
+```
+
+```
