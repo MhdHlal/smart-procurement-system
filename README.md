@@ -92,7 +92,14 @@ graph TD
 
 ## 🛠️ Installation & Setup
 
-### 1. Environment Setup
+### 1. Prerequisites
+
+To ensure a seamless deployment, please verify that your environment meets the following requirements:
+
+- **Python 3.9+**: The recommended stable version for library compatibility.
+- **Git**: Required for version control and repository management.
+
+### 2. Environment Setup
 
 1. **Clone the Repository:**
 
@@ -101,28 +108,45 @@ graph TD
    cd smart-procurement-system
    ```
 
-2. **Initialize Environment:**
+2. **Initialize Virtual Environment:**
+   _It is highly recommended to use a virtual environment to isolate project dependencies._
    ```bash
    python -m venv venv
-   source venv/bin/activate  # On Windows: .\venv\Scripts\activate
+   # Activation for Windows:
+   .\venv\Scripts\activate
+   # Activation for Mac/Linux:
+   source venv/bin/activate
    ```
 
-### 2. Configuration
+### 3. Configuration
 
-Create a `.env` file from the provided template:
+1. **Initialize Environment Variables:** Create your local configuration file from the provided template.
+   ```bash
+   cp .env.example .env
+   ```
+2. **SMTP Integration:** Open the `.env` file and update your email credentials.
+   - **Note:** If using **Gmail**, you must generate and use an **"App Password"** instead of your primary account password to bypass security blocks and ensure successful RFQ dispatch.
+
+### 4. Deployment
 
 ```bash
-cp .env.example .env
-```
-
-Update the `.env` file with your SMTP credentials (`SENDER_EMAIL`, `SENDER_PASSWORD`, etc.).
-
-### 3. Deployment
-
-```bash
+# Upgrade package manager and install dependencies
+python -m pip install --upgrade pip
 pip install -r requirements.txt
+
+# Launch the Streamlit User Interface
 streamlit run app.py
 ```
+
+---
+
+## 🔍 Troubleshooting
+
+If you encounter issues during setup or execution, please refer to the following solutions:
+
+- **Dependency Installation Failure:** Ensure your virtual environment (`venv`) is active and that `pip` is updated to the latest version.
+- **SMTP/Email Authentication Error:** Verify your `SENDER_EMAIL` and `SENDER_PASSWORD` in the `.env` file. Double-check that "App Passwords" are enabled for your mail provider.
+- **Database File Not Found:** The system automatically initializes the `procurement.db` file upon the first successful transaction; ensure the application has write permissions for the project directory.
 
 ---
 
